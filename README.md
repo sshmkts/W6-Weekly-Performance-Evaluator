@@ -1,53 +1,35 @@
 Weekly Performance Evaluator — Week 06
 
-This program analyzes a soccer player's weekly performance.
-The Week 06 update includes arrays and an enum, following the assignment requirements.
+This program analyzes a soccer player’s weekly performance.
+The Week 06 version adds arrays and an enum, following assignment requirements.
 
-Features
+Program Overview
 
-User inputs: player name, age, number of sessions (1–5), training hours per session, and sleep hours.
+The user enters the player’s name, age, number of training sessions (1–5), the hours for each session, and the average sleep per night. Training sessions are stored in an array and validated individually. The program calculates total and average training hours from the array.
 
-Training sessions are stored in an array and validated.
+An enum is used to determine the player’s level (Beginner, Intermediate, Pro). Based on this level, the program generates a simple training plan and a recovery recommendation. All reports can be viewed through a menu and saved to a file named report.txt.
 
-The program calculates total and average training hours.
+Menu Options
 
-Uses an enum (PlayerLevel) to determine the player’s level: Beginner, Intermediate, Pro.
-
-Generates:
-
-Level Report (includes array session details)
+Evaluate Level
 
 Training Plan
 
-Recovery Report
+Recovery
 
-Reports are displayed in the console and also saved to report.txt.
+Quit
 
-Includes input validation, formatted output, color, and a menu:
+Key Additions in Week 06
 
-1) Evaluate Level
-2) Training Plan
-3) Recovery
-0) Quit
+Arrays are used to store multiple sessions.
+Functions accept arrays as parameters.
+An enum is used inside a switch statement.
+Reports include the session data from the array.
+Constants are used instead of magic numbers.
 
 How to Run
 
-Compile and run the program (Visual Studio recommended).
-
-Enter the requested player data.
-
-Use the menu to view reports.
-
+Compile and run the program.
+Enter the requested player information.
+Choose a menu option to view the reports.
 In Debug Mode, you can inspect the training sessions array.
-
-What’s New in Week 06
-
-Added arrays to store multiple training sessions.
-
-Added functions that accept arrays.
-
-Added enum for player level and used it in a switch.
-
-Improved file output with session details.
-
-Removed magic numbers by using constants.
